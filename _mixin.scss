@@ -1,0 +1,23 @@
+@mixin btn() {
+    border: 2px solid $green;
+    padding: 10px 40px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background: transparent;
+    color: $green;
+    transition: $transition;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid $pink;
+        color: $pink;
+    }
+}
+
+@mixin line {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: $ligthGray;
+    margin: 20px 0;
+}

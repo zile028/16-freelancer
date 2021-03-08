@@ -1,1 +1,204 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Source+Sans+Pro:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #303633;
+  line-height: 1.6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans pro", sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #f2f2f2;
+  margin: 20px 0;
+  background-color: #303633;
+  width: 100px;
+}
+
+aside {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 54, 51, 0.9)), to(rgba(156, 122, 151, 0.9))), url(img/bg.jpg);
+  background-image: linear-gradient(rgba(48, 54, 51, 0.9), rgba(156, 122, 151, 0.9)), url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+  padding-right: 60px;
+}
+
+aside img {
+  width: 40%;
+  border-radius: 50%;
+  border: 5px solid #9c7a97;
+}
+
+aside h1 {
+  font-weight: 300;
+  color: #fff;
+  padding-right: 30px 0;
+}
+
+aside h1 span {
+  color: #8bebcd;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+aside a {
+  color: #8bebcd;
+  margin-left: 20px;
+  font-style: 2rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+aside a:hover {
+  color: #fff;
+}
+
+.main {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 40px;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.main .about button {
+  border: 2px solid #8bebcd;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: transparent;
+  color: #8bebcd;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.main .about button:hover {
+  border: 2px solid #9c7a97;
+  color: #9c7a97;
+}
+
+.main .about::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #f2f2f2;
+  margin: 20px 0;
+}
+
+.main .portfolio .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.main .portfolio .row .col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+.main .portfolio .row .col img {
+  width: 100%;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.main .portfolio .row .col img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: 0.6;
+}
+
+.main .portfolio .row .col h4 {
+  font-size: 2rem;
+  color: #9c7a97;
+  padding: 20px 0;
+}
+
+.main .portfolio .row .col p {
+  padding: 0 0 30px 0;
+}
+
+.main .portfolio button {
+  border: 2px solid #8bebcd;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: transparent;
+  color: #8bebcd;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.main .portfolio button:hover {
+  border: 2px solid #9c7a97;
+  color: #9c7a97;
+}
+
+.main .portfolio::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #f2f2f2;
+  margin: 20px 0;
+}
+/*# sourceMappingURL=style.css.map */
