@@ -43,6 +43,9 @@ h2 {
         width: 100px;
     }
 }
+ul {
+    list-style: none;
+}
 // aside
 aside {
     flex: 1;
@@ -56,6 +59,13 @@ aside {
     align-items: flex-end;
     text-align: right;
     padding-right: 60px;
+    @media (max-width: 768px) {
+        flex: 0 0 100%;
+        align-items: center;
+        padding-right: 0;
+        text-align: center;
+        height: 80vh;
+    }
     img {
         width: 40%;
         border-radius: 50%;
@@ -88,6 +98,10 @@ aside {
     padding: 40px;
     overflow: scroll;
     height: 100vh;
+    @media (max-width: 768px) {
+        flex: 0 0 100%;
+        height: auto;
+    }
     .about {
         button {
             @include btn();
@@ -104,6 +118,9 @@ aside {
             margin-top: 40px;
             .col {
                 flex: 0 0 48%;
+                @media (max-width: 768px) {
+                    flex: 0 0 100%;
+                }
                 img {
                     width: 100%;
                     cursor: pointer;
@@ -130,4 +147,63 @@ aside {
             @include line;
         }
     }
+    // footer
+    footer {
+        padding-bottom: 40px;
+        .row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            form {
+                display: flex;
+                flex: 0 0 68%;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                @media (max-width: 768px) {
+                    flex: 0 0 100%;
+                }
+                input {
+                    flex: 0 0 48%;
+                    padding: 10px;
+                    background: lightgray;
+                    border: none;
+                    margin-bottom: 30px;
+                }
+                textarea {
+                    flex: 0 0 100%;
+                    padding: 10px;
+                    border: none;
+                    background: lightgray;
+                    margin-bottom: 30px;
+                }
+                button {
+                    @include btn;
+                    background: $pink;
+                    color: $white;
+                    border: 2px solid $pink;
+                    &:hover {
+                        color: $white;
+                        background: $green;
+                        border: 2px solid $green;
+                    }
+                }
+            }
+            .contact {
+                flex: 0 0 28%;
+                @media (max-width: 768px) {
+                    flex: 0 0 100%;
+                }
+                li {
+                    line-height: 2.5;
+                    font-size: 1.2rem;
+                    i {
+                        color: $pink;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
 }

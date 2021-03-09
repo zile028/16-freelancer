@@ -43,6 +43,10 @@ h2::after {
   width: 100px;
 }
 
+ul {
+  list-style: none;
+}
+
 aside {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -67,6 +71,20 @@ aside {
           align-items: flex-end;
   text-align: right;
   padding-right: 60px;
+}
+
+@media (max-width: 768px) {
+  aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 0;
+    text-align: center;
+    height: 80vh;
+  }
 }
 
 aside img {
@@ -107,6 +125,15 @@ aside a:hover {
   padding: 40px;
   overflow: scroll;
   height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .main {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    height: auto;
+  }
 }
 
 .main .about button {
@@ -151,6 +178,14 @@ aside a:hover {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
           flex: 0 0 48%;
+}
+
+@media (max-width: 768px) {
+  .main .portfolio .row .col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .main .portfolio .row .col img {
@@ -200,5 +235,112 @@ aside a:hover {
   width: 100%;
   background: #f2f2f2;
   margin: 20px 0;
+}
+
+.main footer {
+  padding-bottom: 40px;
+}
+
+.main footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.main footer .row form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 68%;
+          flex: 0 0 68%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .main footer .row form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.main footer .row form input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  padding: 10px;
+  background: lightgray;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.main footer .row form textarea {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  padding: 10px;
+  border: none;
+  background: lightgray;
+  margin-bottom: 30px;
+}
+
+.main footer .row form button {
+  border: 2px solid #8bebcd;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: transparent;
+  color: #8bebcd;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+  background: #9c7a97;
+  color: #fff;
+  border: 2px solid #9c7a97;
+}
+
+.main footer .row form button:hover {
+  border: 2px solid #9c7a97;
+  color: #9c7a97;
+}
+
+.main footer .row form button:hover {
+  color: #fff;
+  background: #8bebcd;
+  border: 2px solid #8bebcd;
+}
+
+.main footer .row .contact {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 28%;
+          flex: 0 0 28%;
+}
+
+@media (max-width: 768px) {
+  .main footer .row .contact {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.main footer .row .contact li {
+  line-height: 2.5;
+  font-size: 1.2rem;
+}
+
+.main footer .row .contact li i {
+  color: #9c7a97;
 }
 /*# sourceMappingURL=style.css.map */
